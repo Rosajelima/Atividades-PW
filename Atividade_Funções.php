@@ -6,7 +6,7 @@
 
     switch($op){
         case "+":
-            $resultado = Adicao($n1, $n2);
+            $resultado = Adi($n1, $n2);
             echo "O resultado da sua operação é: $resultado";
         break;
 
@@ -26,7 +26,7 @@
         break;
 
     }
-    function Adicao($parm1, $parm2){
+    function Adi($parm1, $parm2){
         $resultado = $parm1 + $parm2; 
         return $resultado;
     }
