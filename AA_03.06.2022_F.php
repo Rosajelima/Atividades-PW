@@ -22,19 +22,7 @@
     </style>
 
       <!-- 
-        
-      Anotações:
 
-      Emili Lib
-      Sorocaba
-      18085-751
-      363
-      Retiro São João
-      BH
-      
-      
-      
-      
       Enunciado:
 
       Desenvolver um script formulário em PHP que contenha os seguintes campos:
