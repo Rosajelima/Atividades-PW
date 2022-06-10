@@ -37,7 +37,7 @@
         <div class="row">
           <div class="form-group col-md-4">
             <label for="name"> Nome </label>
-            <input type="text" class="form-control" name="nome">
+            <input type="text" class="form-control" name="nome" id="nome">
             <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "nome"){
                 echo "*";
             } ?>
@@ -45,12 +45,12 @@
 
           <div class="form-group col-md-3">
             <label for="campo2"> Logradouro </label>
-            <input type="text" class="form-control" name="logradouro">
+            <input type="text" class="form-control" name="logradouro" id="logradouro">
           </div>
 
           <div class="form-group col-md-2">
             <label for="campo3"> Número </label>
-            <input type="text" class="form-control" name="numero" placeholder="Somente Números">
+            <input type="text" class="form-control" name="numero" placeholder="Somente Números" id="numero">
             <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "numero"){
                 echo "*";
             } ?>
@@ -58,7 +58,7 @@
 
           <div class="form-group col-md-3">
             <label for="campo1"> Estado </label>
-            <select name="estado" class="form-select" aria-label="Default select example" required="required">
+            <select name="estado" class="form-select" aria-label="Default select example" id="estado"">
               <option value="Acre (AC)"> Acre (AC) </option>
               <option value="Alagoas (AL)"> Alagoas (AL) </option> 
               <option value="Amapá (AP)"> Amapá (AP) </option>
@@ -93,7 +93,7 @@
 
           <div class="form-group col-md-3">
             <label for="campo2"> Cidade </label>
-            <input type="text" class="form-control" name="cidade">
+            <input type="text" class="form-control" name="cidade" id="cidade">
             <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "cidade"){
                 echo "*";
             } ?>
@@ -101,7 +101,7 @@
 
           <div class="form-group col-md-2">
             <label for="campo2"> Bairro </label>
-            <input type="text" class="form-control" name="bairro">
+            <input type="text" class="form-control" name="bairro" id="bairro">
             <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "bairro"){
                 echo "*";
             } ?>
@@ -109,7 +109,7 @@
           
           <div class="form-group col-md-2">
             <label for="campo3"> CEP </label>
-            <input type="text" class="form-control" name="CEP" placeholder="Somente Números">
+            <input type="text" class="form-control" name="CEP" placeholder="Somente Números" id="CEP">
             <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "CEP"){
                 echo "*";
             } ?>
@@ -117,7 +117,7 @@
           
           <div class="form-group col-md-2">
             <label for="campo3"> Complemento </label>
-            <input type="text" class="form-control" name="complemento">
+            <input type="text" class="form-control" name="complemento" id="complemento">
           </div>
 
           <div class="form-group col-md-3">
