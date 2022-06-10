@@ -30,24 +30,30 @@
 
       -->
 
-      <form action="AA_03.06.2022_.php" method="post" enctype="multipart/form-data">
+       <form action="AA_03.06.2022_.php" method="post" enctype="multipart/form-data">
       
         <hr>
         
         <div class="row">
           <div class="form-group col-md-4">
             <label for="name"> Nome </label>
-            <input type="text" class="form-control" name="nome" required="required">
+            <input type="text" class="form-control" name="nome">
+            <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "nome"){
+                echo "*";
+            } ?>
           </div>
 
           <div class="form-group col-md-3">
             <label for="campo2"> Logradouro </label>
-            <input type="text" class="form-control" name="logradouro" required="required">
+            <input type="text" class="form-control" name="logradouro">
           </div>
 
           <div class="form-group col-md-2">
             <label for="campo3"> Número </label>
-            <input type="text" class="form-control" name="numero" placeholder="Somente Números" required="required">
+            <input type="text" class="form-control" name="numero" placeholder="Somente Números">
+            <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "numero"){
+                echo "*";
+            } ?>
           </div>
 
           <div class="form-group col-md-3">
@@ -87,35 +93,47 @@
 
           <div class="form-group col-md-3">
             <label for="campo2"> Cidade </label>
-            <input type="text" class="form-control" name="cidade" required="required">
+            <input type="text" class="form-control" name="cidade">
+            <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "cidade"){
+                echo "*";
+            } ?>
           </div>
 
           <div class="form-group col-md-2">
             <label for="campo2"> Bairro </label>
-            <input type="text" class="form-control" name="bairro" required="required">
+            <input type="text" class="form-control" name="bairro">
+            <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "bairro"){
+                echo "*";
+            } ?>
           </div>
           
           <div class="form-group col-md-2">
             <label for="campo3"> CEP </label>
-            <input type="text" class="form-control" name="CEP" placeholder="Somente Números" required="required">
+            <input type="text" class="form-control" name="CEP" placeholder="Somente Números">
+            <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "CEP"){
+                echo "*";
+            } ?>
           </div>
           
           <div class="form-group col-md-2">
             <label for="campo3"> Complemento </label>
-            <input type="text" class="form-control" name="complemento" required="required">
+            <input type="text" class="form-control" name="complemento">
           </div>
 
           <div class="form-group col-md-3">
             <label for="file"> Escolher Arquivo </label>
-            <input class="form-control" type="file" id="file" name="arq" required="required">
+            <input class="form-control" type="file" id="file" name="arq">
+            <?php if(isset($_REQUEST["erro"]) && $_REQUEST["erro"] == "arq"){
+                echo "*";
+            } ?>
           </div>
         </div>
         
         <br>
         
-        <div id="actions" class="row">
+        <div class="row">
           <div class="col-md-12">
-            <button type="submit" class="btn btn-dark"><i class="fas fa-save"></i> Enviar </button>
+            <button type="submit" class="btn btn-dark"> Enviar </button>
           </div>
         </div>
       
